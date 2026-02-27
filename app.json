@@ -1,0 +1,39 @@
+{
+  "id": "ca77da5d-ee96-4538-a742-7848dd43ac0e",
+  "name": "Payroll App",
+  "publisher": "MSI",
+  "version": "22.0.0.0",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "9ce26272-97dc-4d3d-8d43-1d077faa8c26",
+      "name": "YCP",
+      "publisher": "Mikro Sinergi Informatika",
+      "version": "22.4.0.18"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "22.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 99999
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "11.0",
+  "features": [
+    "NoImplicitWith"
+  ]
+}

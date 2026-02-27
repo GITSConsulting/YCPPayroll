@@ -1,0 +1,8 @@
+.vscode/*
+*.app
+.vscode
+.alcache
+.vscode/launch.json
+git rm -r --cached .
+git add .
+git commit -m ".gitignore is now working"
