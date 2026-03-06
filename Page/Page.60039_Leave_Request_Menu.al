@@ -205,6 +205,7 @@ page 60039 "Leave Request Menu"
     trigger OnOpenPage()
     var
         _Employee: Record Employee;
+        _UserSetup: Record "User Setup HRIS";
     begin
         TextMenu[1] := '';
         TextMenu[2] := 'Annual Leave Requests';
@@ -226,12 +227,18 @@ page 60039 "Leave Request Menu"
         TextMenu[14] := 'Other Attendance Requests';
         TextMenu[15] := 'Posted Other Attendance Requests';
         gVisible := true;
-        _Employee.SetRange("User ID", USERID);
-        if _Employee.FindFirst() then begin
-            if _Employee."Employee Type" = _Employee."Employee Type"::Staff then
-                gVisible := false
-            else
-                gVisible := true;
-        end;
+        //_Employee.SetRange("User ID", USERID);
+        // if _Employee.FindFirst() then begin
+        //     if _Employee."Employee Type" = _Employee."Employee Type"::Staff then
+        //         gVisible := false
+        //     else
+        //         gVisible := true;
+        // end;
+        _UserSetup.SetRange("User ID", UserId);
+        if _UserSetup.FindFirst() then begin
+            if not _UserSetup."Admin Attendance" then
+                gVisible := false;
+        end else
+            gVisible := false;
     end;
 }

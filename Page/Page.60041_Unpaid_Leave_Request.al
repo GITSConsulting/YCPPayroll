@@ -273,15 +273,16 @@ page 60041 "Unpaid Leave Request"
                             Error('There is an attendance registration data within your leave dates. Pleace check.');
                     end;
 
-                    LeaveRequest.Reset();
-                    LeaveRequest.SetRange("Employee No.", Rec."Employee No.");
-                    LeaveRequest.SetRange("Starting Date", Rec."Starting Date", Rec."Ending Date");
-                    if LeaveRequest.FindFirst() then
-                        Error('There is an existing leave request for the same period.');
+                    // LeaveRequest.Reset();
+                    // LeaveRequest.SetRange("Employee No.", Rec."Employee No.");
+                    // LeaveRequest.SetRange("Starting Date", Rec."Starting Date", Rec."Ending Date");
+                    // if LeaveRequest.FindFirst() then
+                    //     Error('There is an existing leave request for the same period.');
 
                     LeaveRequest.Reset();
                     LeaveRequest.SetRange("Employee No.", Rec."Employee No.");
                     LeaveRequest.SetRange("Ending Date", Rec."Starting Date", Rec."Ending Date");
+                    LeaveRequest.SetFilter("No.", '<> %1', Rec."No.");
                     if LeaveRequest.FindFirst() then
                         Error('There is an existing leave request for the same period.');
 
@@ -487,7 +488,6 @@ page 60041 "Unpaid Leave Request"
             end;
             if employeenya."MSI_HRIS Admin By" = UserId then
                 deductionnya := rec."Salary Deduction";
-
         end;
 
         EmployeeName := Rec.GetEmployeeName(true);

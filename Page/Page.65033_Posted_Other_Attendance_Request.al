@@ -49,19 +49,19 @@ page 65033 "Posted Other Attendance"
                 {
                     ApplicationArea = all;
                 }
-                group("* Note for 0,5 day leave request, please tick below option :")
-                {
-                    field("Leave-1"; rec."Leave-1")
-                    {
-                        Caption = 'Leave taken in the morning';
-                        ApplicationArea = all;
-                    }
-                    field("Leave-2"; rec."Leave-2")
-                    {
-                        Caption = 'Leave taken in the afternoon';
-                        ApplicationArea = all;
-                    }
-                }
+                // group("* Note for 0,5 day leave request, please tick below option :")
+                // {
+                //     field("Leave-1"; rec."Leave-1")
+                //     {
+                //         Caption = 'Leave taken in the morning';
+                //         ApplicationArea = all;
+                //     }
+                //     field("Leave-2"; rec."Leave-2")
+                //     {
+                //         Caption = 'Leave taken in the afternoon';
+                //         ApplicationArea = all;
+                //     }
+                // }
                 field("Global Dimension 1 Code"; Rec."Global Dimension 1 Code")
                 {
                     ApplicationArea = all;
