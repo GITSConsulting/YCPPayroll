@@ -10,6 +10,7 @@ report 65028 CutiTahunan
     {
         dataitem(Employee; Employee)
         {
+            DataItemTableView = SORTING("No.") where("Status" = const(Active));
             RequestFilterFields = "No.";
             column(No_; "No.") { }
             column(FullName; FullName) { }
@@ -59,6 +60,9 @@ report 65028 CutiTahunan
                     Clear(gOct);
                     Clear(gNov);
                     Clear(gDec);
+                    clear(gStartPeriode);
+                    clear(gEndPeriode);
+
                     if (Number = 1) then
                         gYear2 := gYear - 2
                     else if (Number = 2) then
@@ -70,11 +74,13 @@ report 65028 CutiTahunan
                     _StartDate := DMY2Date(1, 1, gYear2);
                     _EndDate := DMY2Date(31, 12, gYear2);
 
-                    _PositionLedgerEntry.SetRange("Employee No.", Employee."No.");
-                    _PositionLedgerEntry.SetRange("Contract Start Date", _StartDate, _EndDate);
-                    if _PositionLedgerEntry.FindFirst() then begin
-                        gStartPeriode := _PositionLedgerEntry."Contract Start Date";
-                        gEndPeriode := _PositionLedgerEntry."Contract End Date";
+                    if gYear - 2 = gYear2 then begin
+                        _PositionLedgerEntry.SetRange("Employee No.", Employee."No.");
+                        //_PositionLedgerEntry.SetRange("Contract Start Date", _StartDate, _EndDate);
+                        if _PositionLedgerEntry.FindLast() then begin
+                            gStartPeriode := _PositionLedgerEntry."Contract Start Date";
+                            gEndPeriode := _PositionLedgerEntry."Contract End Date";
+                        end;
                     end;
 
                     _LeaveLedgerEntry.SetRange("Employee No.", Employee."No.");
@@ -123,7 +129,7 @@ report 65028 CutiTahunan
                 gNo += 1;
                 gStartBalance := 0;
                 gEndingBalance := 0;
-                _StartDate := DMY2Date(1, 1, gYear2 - 2);
+                _StartDate := DMY2Date(1, 1, gYear - 2);
                 _LeaveLedgerEntry.SetRange("Employee No.", Employee."No.");
                 _LeaveLedgerEntry.SetFilter("Posting Date", '<%1', _StartDate);
                 _LeaveLedgerEntry.CalcSums(Quantity);

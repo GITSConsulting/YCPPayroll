@@ -499,6 +499,22 @@ page 65045 "Posted MR Card"
                     Report.run(Report::"Posted Medical Reimbursement", true, false, MedicalHeader);
                 end;
             }
+            action("Print Medical Reimbersement (Klaim)")
+            {
+                Image = Print;
+                Promoted = true;
+                PromotedOnly = true;
+                PromotedCategory = Report;
+                PromotedIsBig = true;
+                ApplicationArea = all;
+                trigger OnAction()
+                var
+                    MedicalHeader: Record "Posted MR Header";
+                begin
+                    CurrPage.SetSelectionFilter(MedicalHeader);
+                    Report.run(Report::"Posted Med. Rmb. Claim", true, false, MedicalHeader);
+                end;
+            }
 
             //dre
             action("Create General Payment")
