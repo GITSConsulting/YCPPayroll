@@ -11,151 +11,6 @@
       <rd:DataSourceID>c29f46a0-8497-43ca-97a2-f37ff25dbd75</rd:DataSourceID>
     </DataSource>
   </DataSources>
-  <DataSets>
-    <DataSet Name="DataSet_Result">
-      <Query>
-        <DataSourceName>DataSource</DataSourceName>
-        <CommandText />
-      </Query>
-      <Fields>
-        <Field Name="LogoCompany">
-          <DataField>LogoCompany</DataField>
-        </Field>
-        <Field Name="No_">
-          <DataField>No_</DataField>
-        </Field>
-        <Field Name="Medical_Type_1">
-          <DataField>Medical_Type_1</DataField>
-        </Field>
-        <Field Name="Medical_Type_2">
-          <DataField>Medical_Type_2</DataField>
-        </Field>
-        <Field Name="Medical_Type_3">
-          <DataField>Medical_Type_3</DataField>
-        </Field>
-        <Field Name="Medical_Type_4">
-          <DataField>Medical_Type_4</DataField>
-        </Field>
-        <Field Name="surgical">
-          <DataField>surgical</DataField>
-        </Field>
-        <Field Name="jasaPerawatan">
-          <DataField>jasaPerawatan</DataField>
-        </Field>
-        <Field Name="Employee_No_">
-          <DataField>Employee_No_</DataField>
-        </Field>
-        <Field Name="Date_of_Claim">
-          <DataField>Date_of_Claim</DataField>
-        </Field>
-        <Field Name="Employeename">
-          <DataField>Employeename</DataField>
-        </Field>
-        <Field Name="Age_of_Patient">
-          <DataField>Age_of_Patient</DataField>
-        </Field>
-        <Field Name="Gender">
-          <DataField>Gender</DataField>
-        </Field>
-        <Field Name="Name_of_Hospital">
-          <DataField>Name_of_Hospital</DataField>
-        </Field>
-        <Field Name="Address_of_hospital">
-          <DataField>Address_of_hospital</DataField>
-        </Field>
-        <Field Name="Hospital_Benefit">
-          <DataField>Hospital_Benefit</DataField>
-        </Field>
-        <Field Name="Hospital_BenefitFormat">
-          <DataField>Hospital_BenefitFormat</DataField>
-        </Field>
-        <Field Name="Place_of_Accident">
-          <DataField>Place_of_Accident</DataField>
-        </Field>
-        <Field Name="Total_Allowance">
-          <DataField>Total_Allowance</DataField>
-        </Field>
-        <Field Name="Total_AllowanceFormat">
-          <DataField>Total_AllowanceFormat</DataField>
-        </Field>
-        <Field Name="Time">
-          <DataField>Time</DataField>
-        </Field>
-        <Field Name="Rekening_no_">
-          <DataField>Rekening_no_</DataField>
-        </Field>
-        <Field Name="From_Date">
-          <DataField>From_Date</DataField>
-        </Field>
-        <Field Name="To_Date">
-          <DataField>To_Date</DataField>
-        </Field>
-        <Field Name="Revision_Date">
-          <DataField>Revision_Date</DataField>
-        </Field>
-        <Field Name="type1">
-          <DataField>type1</DataField>
-        </Field>
-        <Field Name="type2">
-          <DataField>type2</DataField>
-        </Field>
-        <Field Name="type3">
-          <DataField>type3</DataField>
-        </Field>
-        <Field Name="type4">
-          <DataField>type4</DataField>
-        </Field>
-        <Field Name="siapaPasien1">
-          <DataField>siapaPasien1</DataField>
-        </Field>
-        <Field Name="siapaPasien2">
-          <DataField>siapaPasien2</DataField>
-        </Field>
-        <Field Name="siapaPasien3">
-          <DataField>siapaPasien3</DataField>
-        </Field>
-        <Field Name="getnama1">
-          <DataField>getnama1</DataField>
-        </Field>
-        <Field Name="getnama2">
-          <DataField>getnama2</DataField>
-        </Field>
-        <Field Name="getnama3">
-          <DataField>getnama3</DataField>
-        </Field>
-        <Field Name="getnama4">
-          <DataField>getnama4</DataField>
-        </Field>
-        <Field Name="Document_No_">
-          <DataField>Document_No_</DataField>
-        </Field>
-        <Field Name="Medical_Value">
-          <DataField>Medical_Value</DataField>
-        </Field>
-        <Field Name="Medical_Value2">
-          <DataField>Medical_Value2</DataField>
-        </Field>
-        <Field Name="Claim_Amount">
-          <DataField>Claim_Amount</DataField>
-        </Field>
-        <Field Name="Claim_AmountFormat">
-          <DataField>Claim_AmountFormat</DataField>
-        </Field>
-        <Field Name="Day">
-          <DataField>Day</DataField>
-        </Field>
-        <Field Name="DayFormat">
-          <DataField>DayFormat</DataField>
-        </Field>
-        <Field Name="frz_AmountPerDay">
-          <DataField>frz_AmountPerDay</DataField>
-        </Field>
-        <Field Name="frz_AmountPerDayFormat">
-          <DataField>frz_AmountPerDayFormat</DataField>
-        </Field>
-      </Fields>
-    </DataSet>
-  </DataSets>
   <ReportSections>
     <ReportSection>
       <Body>
@@ -9982,12 +9837,6 @@
       </Page>
     </ReportSection>
   </ReportSections>
-  <ReportParametersLayout>
-    <GridLayoutDefinition>
-      <NumberOfColumns>4</NumberOfColumns>
-      <NumberOfRows>2</NumberOfRows>
-    </GridLayoutDefinition>
-  </ReportParametersLayout>
   <Code>Public Function BlankZero(ByVal Value As Decimal)
     if Value = 0 then
         Return ""
@@ -10037,4 +9886,149 @@ End Function
   <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
   <rd:ReportUnitType>Cm</rd:ReportUnitType>
   <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="LogoCompany">
+          <DataField>LogoCompany</DataField>
+        </Field>
+        <Field Name="No_">
+          <DataField>No_</DataField>
+        </Field>
+        <Field Name="Medical_Type_1">
+          <DataField>Medical_Type_1</DataField>
+        </Field>
+        <Field Name="Medical_Type_2">
+          <DataField>Medical_Type_2</DataField>
+        </Field>
+        <Field Name="Medical_Type_3">
+          <DataField>Medical_Type_3</DataField>
+        </Field>
+        <Field Name="Medical_Type_4">
+          <DataField>Medical_Type_4</DataField>
+        </Field>
+        <Field Name="surgical">
+          <DataField>surgical</DataField>
+        </Field>
+        <Field Name="jasaPerawatan">
+          <DataField>jasaPerawatan</DataField>
+        </Field>
+        <Field Name="Employee_No_">
+          <DataField>Employee_No_</DataField>
+        </Field>
+        <Field Name="Date_of_Claim">
+          <DataField>Date_of_Claim</DataField>
+        </Field>
+        <Field Name="Employeename">
+          <DataField>Employeename</DataField>
+        </Field>
+        <Field Name="Age_of_Patient">
+          <DataField>Age_of_Patient</DataField>
+        </Field>
+        <Field Name="Gender">
+          <DataField>Gender</DataField>
+        </Field>
+        <Field Name="Name_of_Hospital">
+          <DataField>Name_of_Hospital</DataField>
+        </Field>
+        <Field Name="Address_of_hospital">
+          <DataField>Address_of_hospital</DataField>
+        </Field>
+        <Field Name="Hospital_Benefit">
+          <DataField>Hospital_Benefit</DataField>
+        </Field>
+        <Field Name="Hospital_BenefitFormat">
+          <DataField>Hospital_BenefitFormat</DataField>
+        </Field>
+        <Field Name="Place_of_Accident">
+          <DataField>Place_of_Accident</DataField>
+        </Field>
+        <Field Name="Total_Allowance">
+          <DataField>Total_Allowance</DataField>
+        </Field>
+        <Field Name="Total_AllowanceFormat">
+          <DataField>Total_AllowanceFormat</DataField>
+        </Field>
+        <Field Name="Time">
+          <DataField>Time</DataField>
+        </Field>
+        <Field Name="Rekening_no_">
+          <DataField>Rekening_no_</DataField>
+        </Field>
+        <Field Name="From_Date">
+          <DataField>From_Date</DataField>
+        </Field>
+        <Field Name="To_Date">
+          <DataField>To_Date</DataField>
+        </Field>
+        <Field Name="Revision_Date">
+          <DataField>Revision_Date</DataField>
+        </Field>
+        <Field Name="type1">
+          <DataField>type1</DataField>
+        </Field>
+        <Field Name="type2">
+          <DataField>type2</DataField>
+        </Field>
+        <Field Name="type3">
+          <DataField>type3</DataField>
+        </Field>
+        <Field Name="type4">
+          <DataField>type4</DataField>
+        </Field>
+        <Field Name="siapaPasien1">
+          <DataField>siapaPasien1</DataField>
+        </Field>
+        <Field Name="siapaPasien2">
+          <DataField>siapaPasien2</DataField>
+        </Field>
+        <Field Name="siapaPasien3">
+          <DataField>siapaPasien3</DataField>
+        </Field>
+        <Field Name="getnama1">
+          <DataField>getnama1</DataField>
+        </Field>
+        <Field Name="getnama2">
+          <DataField>getnama2</DataField>
+        </Field>
+        <Field Name="getnama3">
+          <DataField>getnama3</DataField>
+        </Field>
+        <Field Name="getnama4">
+          <DataField>getnama4</DataField>
+        </Field>
+        <Field Name="Document_No_">
+          <DataField>Document_No_</DataField>
+        </Field>
+        <Field Name="Medical_Value">
+          <DataField>Medical_Value</DataField>
+        </Field>
+        <Field Name="Medical_Value2">
+          <DataField>Medical_Value2</DataField>
+        </Field>
+        <Field Name="Claim_Amount">
+          <DataField>Claim_Amount</DataField>
+        </Field>
+        <Field Name="Claim_AmountFormat">
+          <DataField>Claim_AmountFormat</DataField>
+        </Field>
+        <Field Name="Day">
+          <DataField>Day</DataField>
+        </Field>
+        <Field Name="DayFormat">
+          <DataField>DayFormat</DataField>
+        </Field>
+        <Field Name="frz_AmountPerDay">
+          <DataField>frz_AmountPerDay</DataField>
+        </Field>
+        <Field Name="frz_AmountPerDayFormat">
+          <DataField>frz_AmountPerDayFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
 </Report>
