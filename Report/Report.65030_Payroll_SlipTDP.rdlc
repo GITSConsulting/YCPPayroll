@@ -19,7 +19,7 @@
             <TablixBody>
               <TablixColumns>
                 <TablixColumn>
-                  <Width>6.23062cm</Width>
+                  <Width>8.25552cm</Width>
                 </TablixColumn>
               </TablixColumns>
               <TablixRows>
@@ -35,9 +35,9 @@
                             <Paragraph>
                               <TextRuns>
                                 <TextRun>
-                                  <Value>PAYROLL SLIP</Value>
+                                  <Value>Slip Pembayaran Gaji/Fee Technical Delivery Personel</Value>
                                   <Style>
-                                    <FontSize>18pt</FontSize>
+                                    <FontSize>14pt</FontSize>
                                     <FontWeight>Bold</FontWeight>
                                   </Style>
                                 </TextRun>
@@ -74,9 +74,9 @@
               </TablixMembers>
             </TablixRowHierarchy>
             <Top>0.99166cm</Top>
-            <Left>5.28849cm</Left>
+            <Left>3.97616cm</Left>
             <Height>2.16104cm</Height>
-            <Width>6.23062cm</Width>
+            <Width>8.25552cm</Width>
             <Style>
               <Border>
                 <Style>None</Style>
@@ -88,8 +88,8 @@
             <Value>=Fields!LogoCompany.Value</Value>
             <MIMEType>image/png</MIMEType>
             <Sizing>FitProportional</Sizing>
-            <Height>2.38919cm</Height>
-            <Width>2.50542cm</Width>
+            <Height>3.1527cm</Height>
+            <Width>3.09809cm</Width>
             <ZIndex>1</ZIndex>
             <Style>
               <Border>
@@ -3221,7 +3221,7 @@
                   </TablixCells>
                 </TablixRow>
                 <TablixRow>
-                  <Height>6.76683cm</Height>
+                  <Height>6.4705cm</Height>
                   <TablixCells>
                     <TablixCell>
                       <CellContents>
@@ -3240,7 +3240,7 @@
                             </TablixColumns>
                             <TablixRows>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -3354,7 +3354,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -3468,7 +3468,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -3582,7 +3582,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -3696,7 +3696,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -3810,7 +3810,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -3924,7 +3924,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -4038,7 +4038,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -4149,7 +4149,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -4260,7 +4260,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -4371,7 +4371,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -4482,7 +4482,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -4504,7 +4504,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>**Perhitungan Prosentase x Gaji/Fee, tidak lebih dari batas atas Rp. </Value>
+                                                <Value>**Perhitungan Prosentase x Gaji/Fee, tidak lebih dari batas atas Rp.</Value>
                                                 <Style>
                                                   <FontSize>5pt</FontSize>
                                                 </Style>
@@ -4513,7 +4513,6 @@
                                                 <Value>=Fields!JP_JKT_YCP_2_Limit.Value</Value>
                                                 <Style>
                                                   <FontSize>5pt</FontSize>
-                                                  <Format>n2</Format>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
@@ -4522,7 +4521,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>***Perhitungan Prosentase x Gaji/Fee, tidak lebih dari batas atas Rp. </Value>
+                                                <Value>***Perhitungan Prosentase x Gaji/Fee, tidak lebih dari batas atas Rp.</Value>
                                                 <Style>
                                                   <FontSize>5pt</FontSize>
                                                 </Style>
@@ -4531,7 +4530,6 @@
                                                 <Value>=Fields!BPJS_KES_JKT_YCP_Limit.Value</Value>
                                                 <Style>
                                                   <FontSize>5pt</FontSize>
-                                                  <Format>n2</Format>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
@@ -4693,7 +4691,7 @@
                             </TablixColumns>
                             <TablixRows>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -4828,7 +4826,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -4955,7 +4953,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -5074,7 +5072,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -5190,7 +5188,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -5309,7 +5307,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -5428,7 +5426,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -5547,7 +5545,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -5666,7 +5664,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -5785,7 +5783,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -5904,7 +5902,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -6023,7 +6021,7 @@
                                 </TablixCells>
                               </TablixRow>
                               <TablixRow>
-                                <Height>0.5639cm</Height>
+                                <Height>0.53921cm</Height>
                                 <TablixCells>
                                   <TablixCell>
                                     <CellContents>
@@ -6045,7 +6043,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>**Perhitungan Prosentase x Gaji/Fee, tidak lebih dari batas atas Rp. </Value>
+                                                <Value>**Perhitungan Prosentase x Gaji/Fee, tidak lebih dari batas atas Rp.</Value>
                                                 <Style>
                                                   <FontSize>5pt</FontSize>
                                                 </Style>
@@ -6054,7 +6052,6 @@
                                                 <Value>=Fields!JP_JKT_YCP_2_Limit.Value</Value>
                                                 <Style>
                                                   <FontSize>5pt</FontSize>
-                                                  <Format>n2</Format>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
@@ -6063,7 +6060,7 @@
                                           <Paragraph>
                                             <TextRuns>
                                               <TextRun>
-                                                <Value>***Perhitungan Prosentase x Gaji/Fee, tidak lebih dari batas atas Rp. </Value>
+                                                <Value>***Perhitungan Prosentase x Gaji/Fee, tidak lebih dari batas atas Rp.</Value>
                                                 <Style>
                                                   <FontSize>5pt</FontSize>
                                                 </Style>
@@ -6072,7 +6069,17 @@
                                                 <Value>=Fields!BPJS_KES_JKT_YCP_Limit.Value</Value>
                                                 <Style>
                                                   <FontSize>5pt</FontSize>
-                                                  <Format>n2</Format>
+                                                </Style>
+                                              </TextRun>
+                                            </TextRuns>
+                                            <Style />
+                                          </Paragraph>
+                                          <Paragraph>
+                                            <TextRuns>
+                                              <TextRun>
+                                                <Value />
+                                                <Style>
+                                                  <FontSize>5pt</FontSize>
                                                 </Style>
                                               </TextRun>
                                             </TextRuns>
@@ -6864,7 +6871,7 @@
             </TablixRowHierarchy>
             <DataSetName>DataSet_Result</DataSetName>
             <Top>7.42103cm</Top>
-            <Height>16.10375cm</Height>
+            <Height>15.80742cm</Height>
             <Width>18.06577cm</Width>
             <ZIndex>3</ZIndex>
             <Style>
@@ -7155,7 +7162,7 @@
             </Style>
           </Tablix>
         </ReportItems>
-        <Height>23.52478cm</Height>
+        <Height>23.22845cm</Height>
         <Style />
       </Body>
       <Width>18.09539cm</Width>

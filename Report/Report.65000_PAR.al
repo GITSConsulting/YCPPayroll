@@ -14,6 +14,8 @@ report 65000 "PAR"
             column(getBulanDepan; getBulanDepan) { }
             column(No_Emplyo; "No.") { }
             column(FullName; FullName) { }
+            column(gSpvName; gSpvName) { }
+            column(gApprovedBy; gApprovedBy) { }
             column(Office_Location_Code; "Office Location Code") { }
             column(Job_Title; "Job Title") { }
             column(FromDate; FromDate) { }
@@ -73,6 +75,7 @@ report 65000 "PAR"
             column(keseluruhanAllHours; keseluruhanAllHours) { }
             column(keseluruhanAllMinutes; keseluruhanAllMinutes) { }
             column(TotalPersentaseDisbursh; TotalPersentaseDisbursh) { }
+            column(Supervisor_ID; "Supervisor ID") { }
             dataitem("Posted Employee Charging Line"; "Posted Employee Charging Line")
             {
                 DataItemLink = "Employee No." = field("No.");
@@ -675,11 +678,18 @@ report 65000 "PAR"
             end;
 
             trigger OnPreDataItem()
+            var
+                _Employee: Record Employee;
+                _User: Record User;
             begin
                 FromDate := CalcDate('-CM', Bulan);
                 ToDate := CalcDate('CM', Bulan);
                 // procedure get month
                 selectBln(FromDate);
+                if _Employee.Get("No.") then begin
+                    if _User.Get(_Employee."Supervisor ID") then
+                        gSpvName := _User."User Name";
+                end;
             end;
 
         }
@@ -698,6 +708,11 @@ report 65000 "PAR"
                         ApplicationArea = All;
                         Caption = 'Filter Month';
                     }
+                    field(gApprovedBy; gApprovedBy)
+                    {
+                        ApplicationArea = All;
+                        Caption = 'Approved By';
+                    }
                 }
             }
         }
@@ -709,7 +724,7 @@ report 65000 "PAR"
         lamaJam: Integer;
         lamaMenit: Integer;
         frz_PostedLeaveTemporaryHeader: Record "Posted Leave Request" temporary;
-        DescriptionActivity: text;
+        DescriptionActivity, gSpvName, gApprovedBy : text;
         timeWeek1: array[10] of Decimal;
         _timeWeek1: array[10] of Decimal;
         _totalHoursMonth: Decimal;

@@ -1,8 +1,8 @@
-report 65001 "Payroll Slip"
+report 65030 "Payroll Slip TDP"
 {
     UsageCategory = ReportsAndAnalysis;
     ApplicationArea = All;
-    RDLCLayout = './Report/Report.65001_Payroll_Slip.rdlc';
+    RDLCLayout = './Report/Report.65030_Payroll_SlipTDP.rdlc';
     DefaultLayout = RDLC;
     dataset
     {
@@ -157,6 +157,7 @@ report 65001 "Payroll Slip"
                 PositionLedgerEntry: Record "Position Ledger Entry";
                 DimensionValue_2: Record "Dimension Value";
                 PayrollGeneralSetup: Record "Payroll General Setup";
+                _AllowanceComponent: Record "Allowance Component";
             begin
                 PayrollGeneralSetup.Get();
                 DimensionValue_2.Reset();
@@ -461,7 +462,6 @@ report 65001 "Payroll Slip"
                 _AllowanceComponent.SetRange("Kode", 'JP_JKT_YCP_2');
                 if _AllowanceComponent.FindFirst() then
                     JP_JKT_YCP_2_Limit := _AllowanceComponent."Salary Upper Limit";
-
             end;
         }
     }
@@ -551,7 +551,6 @@ report 65001 "Payroll Slip"
         UangPisahShouldBePaid: Decimal;
         CutiBolos: Decimal;
         DuitPotonganBolos: Decimal;
-
         TotalPremiumTaxed: Decimal;
         IuranPensiunTHTJHT: Decimal;
         UnpaidLeaveDeduction: Decimal;
