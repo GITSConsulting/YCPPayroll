@@ -45,7 +45,7 @@ page 65010 "Unconditional Leave Request"
                     var
                         frz_MasterUnconditional: Record "Master Leave Unconditional";
                         frz_UnconLedger: Record "Uncon Leave Ledger Entry";
-                        frz_totalQty: Integer;
+                        frz_totalQty: Decimal;
                     begin
                         frz_UnconLedger.Reset();
                         frz_UnconLedger.SetRange("Employee No.", rec."Employee No.");
