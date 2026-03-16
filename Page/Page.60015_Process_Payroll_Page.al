@@ -1054,8 +1054,8 @@ page 60015 "Process Payroll Page"
     begin
         Misc.CalculateDates(Rec.PostingDate, StartingDate, EndingDate);
 
-        if Rec.PostingDate <> 0D then
-            if (Rec.PostingDate < StartingDate) or (Rec.PostingDate > EndingDate) then begin
+        if Rec.PostingDate <> 0D then begin
+            /*if (Rec.PostingDate < StartingDate) or (Rec.PostingDate > EndingDate) then begin
                 Lanjut := false;
                 PostingDateWords := 'You picked ' +
                                     format(Rec.PostingDate, 0, '<Day> <Month Text> <Year4>');
@@ -1063,21 +1063,22 @@ page 60015 "Process Payroll Page"
                 DateRange := 'Eligible date to process this should be between ' +
                              format(StartingDate, 0, '<Day> <Month Text> <Year4>') + ', until ' +
                              format(EndingDate, 0, '<Day> <Month Text> <Year4>');
+            end else begin*/
+            Lanjut := true;
+            PostingDateWords := 'Posting date is okay';
+            DateRange := 'Please proceed...';
+
+            BulanDesember := Date2DMY(Rec.PostingDate, 2);
+            if BulanDesember = 12 then begin
+                YearEndProcess := true;
+                YearEndStr := 'This process will trigger the year end tax calculation.';
             end else begin
-                Lanjut := true;
-                PostingDateWords := 'Posting date is okay';
-                DateRange := 'Please proceed...';
-
-                BulanDesember := Date2DMY(Rec.PostingDate, 2);
-                if BulanDesember = 12 then begin
-                    YearEndProcess := true;
-                    YearEndStr := 'This process will trigger the year end tax calculation.';
-                end else begin
-                    YearEndProcess := false;
-                    YearEndStr := '';
-                end;
-
+                YearEndProcess := false;
+                YearEndStr := '';
             end
+
+            //end
+        end
         else begin
             Lanjut := false;
             PostingDateWords := 'You have not pick the posting date.';

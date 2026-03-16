@@ -181,9 +181,12 @@ page 65004 "Medical Reimbursement Card"
                             rec_MedicalLines3: Record "Medical Reimbursement Line";
                         begin
                             // noModifyType();
+                            if Rec."Status Patient" <> Rec."Status Patient"::Employee then
+                                Error('Status patient must be employee if medical type kacamata is selected');
                             rec.TestField("Posting Date");
                             rec.TestField("Employee No.");
                             rec.TestField("From Date");
+                            CekMandatoryField();
                             if rec."Medical Type 1" = true then begin
                                 rec."Medical Type 2" := false;
                                 rec."Medical Type 3" := false;
@@ -248,6 +251,7 @@ page 65004 "Medical Reimbursement Card"
                             rec.TestField("Posting Date");
                             rec.TestField("Employee No.");
                             rec.TestField("From Date");
+                            CekMandatoryField();
                             // noModifyType();
                             if rec."Medical Type 2" = true then begin
                                 rec."Medical Type 1" := false;
@@ -324,6 +328,7 @@ page 65004 "Medical Reimbursement Card"
                             rec.TestField("Posting Date");
                             rec.TestField("Employee No.");
                             rec.TestField("From Date");
+                            CekMandatoryField();
                             if rec."Medical Type 4" = true then begin
                                 rec."Medical Type 1" := false;
                                 rec."Medical Type 3" := false;
@@ -383,6 +388,7 @@ page 65004 "Medical Reimbursement Card"
                             rec_MedicalLines2: Record "Medical Reimbursement Line";
                             rec_MedicalLines3: Record "Medical Reimbursement Line";
                         begin
+
                             if rec."Medical Type 3" = true then begin
                                 rec."Medical Type 1" := false;
                                 rec."Medical Type 4" := false;
@@ -392,6 +398,7 @@ page 65004 "Medical Reimbursement Card"
                             rec.TestField("Posting Date");
                             rec.TestField("Employee No.");
                             rec.TestField("From Date");
+                            CekMandatoryField();
                             if rec."Medical Type 3" = true then begin
                                 frz_InapCheck := true;
                             end else
@@ -929,5 +936,13 @@ page 65004 "Medical Reimbursement Card"
             repeat
                 frz_MedicalLine.Delete();
             until frz_MedicalLine.Next() = 0;
+    end;
+
+    procedure CekMandatoryField()
+    begin
+        Rec.TestField("Name of Hospital");
+        Rec.TestField("Address of hospital");
+        Rec.TestField(Time);
+        Rec.TestField("Rekening no.");
     end;
 }
